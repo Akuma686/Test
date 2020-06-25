@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/variables";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $bg-color;
+  font-family: Helvetica, serif;
+}
+
+.link {
+  color: $main-color;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+::placeholder {
+  color: #b6b6b6;
+}

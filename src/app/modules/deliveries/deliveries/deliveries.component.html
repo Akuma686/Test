@@ -1,0 +1,196 @@
+<div id="container">
+
+  <div class="form-container">
+
+    <div class="header">
+      <span class="header-name">Фильтр</span>
+      <i class="fas fa-filter link"></i>
+    </div>
+
+    <div class="form">
+
+      <div class="date-group">
+        <div class="form-group">
+          <div class="label">С</div>
+          <div class="input-container">
+
+            <div class="link">
+              <div>
+                04.12.2019 10.00
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label">По</div>
+          <div class="input-container">
+            <div class="link">
+              04.12.2019 10.00
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="id-group">
+
+        <div class="form-group">
+          <div class="label">Внешний ID</div>
+          <div class="input-container">
+            <input class="input" type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label">ID доставки</div>
+          <div class="input-container">
+            <input class="input" type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label">ID группы</div>
+          <div class="input-container">
+            <input class="input" type="text">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="btn-group">
+
+        <div class="form-group">
+
+          <div class="input-container">
+            <input class="input" type="text" placeholder="Наименование">
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <button class="btn">Найти</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div *ngFor="let group of items" class="delivery-group">
+
+    <div class="header">
+
+      <div class="link">
+
+        <i class="fas fa-redo-alt"></i>
+        <span class="text">Повторить группу</span>
+
+      </div>
+
+      <div class="link" style="margin-left: 15px; margin-right: 15px;">
+        <i class="fas fa-check-circle"></i>
+        <span class="text">Закрыть группу</span>
+      </div>
+
+      <div style="color: darkgrey;">№ <span class="group-text">группы</span> 2695</div>
+
+    </div>
+
+    <div class="delivery" *ngFor="let itm of group">
+
+      <div class="data">
+
+        <div>
+          <i class="fas fa-running"></i>
+          <span class="status">Курьер у отправителя</span>
+        </div>
+
+        <div class="description">Счёт-фактуры контрагентам</div>
+
+        <div class="datetime">
+
+          <div class="link">№336 837</div>
+          <div class="date">20 июня 2018</div>
+          <div class="time">
+            <i class="far fa-clock" style="font-size: 13px;"></i> 16:20
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="info">
+
+        <div class="info-data">
+
+          <div class="info-value">840 р</div>
+          <div class="info-label">стоимость</div>
+
+        </div>
+
+        <div class="info-data">
+          <div class="info-value">3 кг</div>
+          <div class="info-label">вес</div>
+        </div>
+
+      </div>
+
+      <div class="sender">
+
+        <div class="container">
+
+          <i class="fas fa-map-marker-alt"></i>
+
+          <div class="sender-info"><span style="font-weight: bold;">Отправитель</span>: Константин Александровичб +7 863
+            754-19-90 м.
+            Белорусскаяб 5-ая Ямского поля ул., 7 корпус 2, Москва
+          </div>
+
+        </div>
+
+        <div class="container">
+          <i class="fas fa-map-marker-alt"></i>
+
+          <div class="sender-info"><span style="font-weight: bold;">Получатель</span>: Константин Александровичб
+            +7 863 754-19-90 м. Белорусскаяб 5-ая Ямского поля ул., 7 корпус 2, Москва
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="pagination">
+
+    <div class="pages">
+
+      <div class="page current">1</div>
+      <div class="page">2</div>
+      <div class="page">3</div>
+      <div class="page">4</div>
+      <div class="page">5</div>
+      <div class="page">6</div>
+      <div class="page">7</div>
+      <div class="next link">Вперед <i class="fas fa-long-arrow-alt-right"></i></div>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="items-per-page">
+      Показать на странице: <span class="link">25</span>, <span class="link">50</span>, <span class="link">100</span>
+    </div>
+
+  </div>
+
+
+</div>

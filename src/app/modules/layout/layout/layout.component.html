@@ -1,0 +1,58 @@
+<div class="container">
+
+  <div class="nav">
+
+    <img class="logo" routerLink="/" src="assets/imgs/logo.png" alt="">
+
+    <div class="nav-link">
+      <div class="icon">
+        <i class="fas fa-plus-circle"></i>
+      </div>
+      <div class="text">Заказать доставку</div>
+    </div>
+
+    <div class="nav-link" routerLink="/deliveries" [ngClass]="{'active-link': isActive(['deliveries'])}">
+      <div class="icon"><i class="fas fa-car-side"></i></div>
+      <div class="text">Доставки</div>
+    </div>
+
+    <div class="nav-link">
+      <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+      <div class="text">Заявки</div>
+    </div>
+
+    <div class="nav-link">
+      <div class="icon"><i class="fas fa-user-friends"></i></div>
+      <div class="text">Контакты</div>
+    </div>
+
+    <div class="nav-link">
+      <div class="icon"><i class="fas fa-cog"></i></div>
+      <div class="text">Аккаунт</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="nav-link">
+      <div class="icon"><i class="fas fa-sign-in-alt"></i></div>
+      <div class="text">Выход</div>
+    </div>
+
+    <div class="nav-link">
+      <div class="icon"><i class="fas fa-long-arrow-alt-left"></i></div>
+      <div class="text">Вернуться на сайт</div>
+    </div>
+
+  </div>
+
+  <div class="header">
+    <div class="menu"><i class="fas fa-bars"></i></div>
+    <div class="header-name">Доставки</div>
+  </div>
+
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
